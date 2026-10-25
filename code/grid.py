@@ -100,6 +100,7 @@ class GridSimulator:
 
     def save_cache(self):
         if self.cache_path:
+            os.makedirs(os.path.dirname(self.cache_path) or ".", exist_ok=True)
             with open(self.cache_path, "w", encoding="utf-8") as f:
                 json.dump(self.cache, f)
 
