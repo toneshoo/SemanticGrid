@@ -1,0 +1,33 @@
+{
+  "grid": "IEEE 118-bus",
+  "lines": 186,
+  "samples": 200,
+  "median_ms": {
+    "newton_raphson_andes": 6.097700000282202,
+    "gnn_inference": 1.980800000637828,
+    "fsm_lookup": 0.00026370000068709487
+  },
+  "speedup_vs_nr": {
+    "gnn": 3.0784026647408678,
+    "fsm": 23123.625272635865
+  },
+  "gpu_gnn": {
+    "single_ms": 4.4979000003877445,
+    "batch256_ms_per_contingency": 0.027972757919163455,
+    "batch1024_ms_per_contingency": 0.017242981691369796,
+    "batch4096_ms_per_contingency": 0.014920127869731207,
+    "device": "NVIDIA GeForce RTX 5070 Ti",
+    "all_n2_pairs_seconds": 0.2567007999987254
+  },
+  "contingency_counts": {
+    "1": 186,
+    "2": 17205,
+    "3": 1055240
+  },
+  "estimated_full_sweep_hours_nr": {
+    "N-1": 0.0003150478333479138,
+    "N-2": 0.02914192458468202,
+    "N-3": 1.7873713745271642
+  },
+  "machine_note": "ANDES / CPU GNN / FSM: CPU, single thread; GPU GNN: CUDA; Python 3.11"
+}

@@ -1,0 +1,7 @@
+torch>=2.11
+torch_geometric==2.8.0
+andes==2.0.0
+aalpy==1.6.2
+numpy
+tqdm
+matplotlib

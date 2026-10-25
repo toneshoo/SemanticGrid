@@ -1,0 +1,20 @@
+{
+  "samples": 357,
+  "voltage_mae_pu": 0.0007643035439967233,
+  "semantic_accuracy": 0.9859943977591037,
+  "confusion_truth_to_pred": {
+    "ALERT->ALERT": 41,
+    "ALERT->NORMAL": 1,
+    "COLLAPSE->ALERT": 1,
+    "COLLAPSE->COLLAPSE": 42,
+    "NORMAL->ALERT": 3,
+    "NORMAL->NORMAL": 269
+  },
+  "class_counts_all": {
+    "NORMAL": 1379,
+    "COLLAPSE": 221,
+    "ALERT": 187
+  },
+  "train_seconds": 144.82905449999998,
+  "train_device": "cuda"
+}
